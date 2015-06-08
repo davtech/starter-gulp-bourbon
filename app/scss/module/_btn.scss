@@ -1,0 +1,71 @@
+/*
+ * Button
+ */
+
+.btn, .btn-secondary {
+    display: block;
+    width: 100%;
+    padding: rem(14) rem(50);
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    font-size: rem(14);
+    font-weight: bold;
+    color: $clr-light ;
+    background-color: $clr-1;
+    border-radius: $rad;
+    transition: $trans;
+    -webkit-user-drag: none;
+    user-select :none;
+    -webkit-appearance: none;
+    @media (min-width: $tiny-screen-up ) {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+    }
+    + [class*=btn] {
+        margin-top: $spacer-m;
+        @media (min-width: $tiny-screen-up ) {
+            margin-left: rem(10);
+            margin-top: 0;
+        }
+    }
+}
+
+.btn {
+    color: $clr-light ;
+    background-color: $clr-1;
+    &:hover, &:focus {
+        color: $clr-light ;
+        background: $clr-1-darken;
+    }
+    &.is-active {
+        background: shade($clr-1, 40%);
+    }
+}
+
+.btn-secondary {
+    color: $base-font-color;
+    background: $base-border-color;
+    &:hover, &:focus {
+        color: $clr-light ;
+        background: shade($base-border-color, 20%);
+    }
+    &.is-active {
+        color: $clr-light ;
+        background: shade($base-border-color, 40%);
+    }
+}
+
+.btn-small {
+    padding: rem(3) rem(12);
+    font-size: rem(11);
+}
+
+.btn-large {
+    padding: rem(16) rem(48);
+    font-size: rem(16);
+}

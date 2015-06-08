@@ -1,0 +1,25 @@
+/* Spacing helpers
+ *   p,m = padding,margin
+ *   a,t,r,b,l = all,top,right,bottom,left
+ *   s,m,l,n = small, medium, large, none
+*/
+
+.man { margin: $spacer-n !important }
+.mbn { margin-bottom: $spacer-n !important }
+.mbs { margin-bottom: $spacer-s !important }
+.mbm { margin-bottom: $spacer-m !important }
+.mbl { margin-bottom: $spacer-l !important }
+.mtn { margin-top: $spacer-n !important }
+.mts { margin-top: $spacer-s !important }
+.mtm { margin-top: $spacer-m !important }
+.mtl { margin-top: $spacer-l !important }
+
+.pan { padding: $spacer-n !important }
+.pbn { padding-bottom: $spacer-n !important }
+.pbs { padding-bottom: $spacer-s !important }
+.pbm { padding-bottom: $spacer-m !important }
+.pbl { padding-bottom: $spacer-l !important }
+.ptn { padding-top: $spacer-n !important }
+.pts { padding-top: $spacer-s !important }
+.ptm { padding-top: $spacer-m !important }
+.ptl { padding-top: $spacer-l !important }

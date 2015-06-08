@@ -1,0 +1,72 @@
+// Show all elements for alignemnt
+body * { background: rgba(0,0,0,.15); }
+
+// Empty Elements
+div:empty,
+section:empty,
+article:empty,
+form:empty,
+span:empty,
+li:empty,
+p:empty,
+td:empty,
+th:empty {
+    padding: 20px;
+    border: 5px dotted yellow !important;
+}
+
+// Empty Attributes
+*[alt=""],
+*[title=""],
+*[class=""],
+*[id=""],
+a[href=""],
+a[href="#"],
+a:not([href]),
+label:not([for]),
+input:not([type]),
+form:not([action]),
+form:not([method]),
+form[method=""],
+textarea:not([cols]),
+textarea:not([rows]),
+form button:not([type]),
+img:not([alt]) {
+    box-shadow: 0 0 0 5px yellow !important;
+}
+
+// Deprecated Elements
+hgroup,
+applet,
+basefont,
+center,
+dir,
+font,
+isindex,
+menu,
+s,
+strike,
+u {
+    box-shadow: 0 0 0 5px red !important;
+}
+
+// Deprecated Attributes
+*[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade],
+*[nowrap], *[size], *[start], *[bottommargin], *[leftmargin], *[rightmargin],
+*[topmargin], *[marginheight], *[marginwidth], *[alink], *[link], *[text], *[vlink],
+*[align], *[valign], *[hspace], *[vspace], *[height]:not(img), *[width]:not(img),
+ul[type], ol[type], li[type] {
+    box-shadow: 0 0 0 5px red !important;
+}
+
+// Proposed Deprecated Elements
+input[type="button"],
+big,
+tt,
+*[border],
+a[target],
+table[cellpadding],
+table[cellspacing],
+*[name] {
+    box-shadow: 0 0 0 5px blue !important;
+}

@@ -1,0 +1,40 @@
+/*
+ * Grid
+ */
+
+.wrap {
+	padding-left: $gutter-width;
+	padding-right: $gutter-width;
+}
+
+@media (min-width: $tiny-screen-up ) {
+
+	.wrap,
+	.wrap-min {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.wrap {
+		max-width: $wrap-max-width;
+	}
+
+	.wrap-min {
+		max-width: 40em;
+	}
+
+	.table {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.cell {
+		display: table-cell;
+		vertical-align: middle;
+		&-top {
+			vertical-align: top
+		}
+	}
+
+}

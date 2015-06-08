@@ -1,0 +1,11 @@
+/*
+ * Paginate
+ */
+
+.paginate {
+	@extend %list-inline;
+	&__link {
+		@extend %btn;
+		font-size: em(10);
+	}
+}

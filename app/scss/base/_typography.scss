@@ -1,0 +1,87 @@
+/*
+ * Typography
+ */
+
+h1, h2, h3, h4, h5, h6,
+.h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
+	margin: 0 0 $spacer-s 0;
+ 	font-family: $header-font-family;
+	line-height: $header-line-height;
+	font-weight: bold;
+	color: $header-font-color;
+	text-rendering: optimizeLegibility;
+}
+
+h1, .h1-like { font-size: rem(32) }
+h2, .h2-like { font-size: rem(28) }
+h3, .h3-like { font-size: rem(24) }
+h4, .h4-like { font-size: rem(20) }
+h5, .h5-like { font-size: rem(18) }
+h6, .h6-like { font-size: rem(16) }
+
+p {
+	margin: 0 0 $spacer-s 0;
+}
+
+.lead {
+	font-weight: bold;
+	font-size: rem(20);
+	color: $clr-0-dark;
+}
+
+.small {
+	font-size: rem(12);
+	line-height: 1.25em;
+}
+
+// Small print typically features disclaimers, caveats, legal restrictions, or copyrights.
+small {
+	font-size: rem(16);
+}
+
+// 1. Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+abbr[title] {
+	font-variant: small-caps;
+	font-weight: 600;
+	text-transform: lowercase;
+	border-bottom: 1px dotted; // [1] - normalize.css
+}
+
+abbr,
+acronym {
+	cursor: help;
+}
+
+// 1. Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+b,
+strong {
+	font-weight: bold; // [1] - normalize.css
+}
+
+// 1. Address styling not present in Safari and Chrome.
+dfn {
+	font-style: italic; // [1] - normalize.css
+}
+
+// Address styling not present in IE 8/9.
+mark {
+  background: #ff0; // normalize.css
+  color: #000; // normalize.css
+}
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+sub,
+sup {
+	font-size: 75%; // normalize.css
+	line-height: 0; // normalize.css
+	position: relative; // normalize.css
+	vertical-align: baseline; // normalize.css
+}
+
+sup {
+	top: -0.5em; // normalize.css
+}
+
+sub {
+	bottom: -0.25em; // normalize.css
+}

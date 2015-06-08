@@ -1,0 +1,17 @@
+/*
+ * Show / hide
+ */
+
+.show-mobile {
+	display: none;
+	@media (min-width: $tiny-screen-up ) {
+		display: block;
+	}
+}
+
+.hide-mobile {
+	display: block;
+	@media (max-width: $tiny-screen ) {
+		display: none;
+	}
+}

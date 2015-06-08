@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+//----------------------------------------
+//   Base
+//----------------------------------------
+
+// Base color
+$clr-light     : #fff;
+$clr-error     : #F2DEDE;
+$clr-success   : #DFF0D8;
+$clr-alert     : #FCF8E3;
+$clr-notice    : #D9EDF7;
+
+$clr-0-darken  : #1C1F26;
+$clr-0         : tint($clr-0-darken, 40%);
+$clr-0-light   : tint($clr-0-darken, 90%);
+$clr-0-lighten : tint($clr-0-darken, 98%);
+$clr-0-dark    : tint($clr-0-darken, 20%);
+
+$clr-1         : #4472B9;
+$clr-1-light   : tint($clr-1, 50%);
+$clr-1-lighten : tint($clr-1, 85%);
+$clr-1-dark    : shade($clr-1, 15%);
+$clr-1-darken  : shade($clr-1, 30%);
+
+$clr-2         : #9565C8;
+$clr-2-light   : tint($clr-2, 50%);
+$clr-2-lighten : tint($clr-2, 85%);
+$clr-2-dark    : shade($clr-2, 15%);
+$clr-2-darken  : shade($clr-2, 30%);
+
+// CSS3
+$rad   : .3rem;
+$trans : all .3s ease-in-out;
+
+// Font
+$base-font-family   : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$code-font          : 'Source Code Pro', Consolas, monospace;
+$base-font-size     : em(16);
+$base-line-height   : 1.625em;
+$base-font-color    : $clr-0;
+
+$header-font-family : $base-font-family;
+$header-line-height : 1.25em;
+$header-font-color  : $clr-0-darken;
+
+// Background
+$base-background-color : #1C1F26;
+
+// Link
+$base-link-color  : $clr-1;
+$base-link-color-hover : $clr-1-darken;
+
+//  Grid
+$wrap-max-width : rem(1000);
+$wrap-min-width : rem(320);
+$gutter-width   : rem(20);
+
+// Border color
+$base-border-color : $clr-0-light;
+
+// Forms
+$form-border-color       : $base-border-color;
+$form-border-color-hover : darken($base-border-color, 10);
+$form-border-color-focus : $clr-1;
+$form-border-radius      : 0;
+$form-box-shadow         : none;
+$form-box-shadow-focus   : $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$color-mixin-placeholder : tint($clr-0, 60%);
+$form-font-size          : $base-font-size;
+$form-font-family        : $base-font-family;
+
+// Spacing
+$spacer   : ($base-line-height * .5);
+$spacer-n : 0;
+$spacer-s : $spacer;
+$spacer-m : $spacer * 2;
+$spacer-l : $spacer * 3;
+
+// Nav
+$h-nav-small: em(84);
+$w-nav-small: em(148);
+
+// Breakpoints (choose unit you prefer)
+$nav-mq             : em(600); // Only for the nav
+$tiny-screen		: em(480);
+$tiny-screen-up     : em(481);
+$small-screen		: em(768);
+$small-screen-up	: em(769);
+$medium-screen		: em(1024);
+$medium-screen-up	: em(1025);
+$large-screen		: em(1280);
+$extra-large-screen	: em(1600);
+$ultra-large-screen	: em(1920);

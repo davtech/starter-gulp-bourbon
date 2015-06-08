@@ -1,0 +1,39 @@
+/*
+ * Table
+ */
+
+// 1. Remove most spacing between table cells
+table {
+	border-collapse: collapse; // [1] - normalize.css
+    border-spacing: 0; // [1] - normalize.css
+	margin: $spacer-s 0;
+	table-layout: fixed;
+	width: 100%;
+}
+
+tr, td, th {
+    padding: 0; // normalize.css
+    vertical-align: middle;
+}
+
+thead  {
+    th {
+        border-bottom: 2px solid darken($base-border-color, 15%);
+        font-weight: bold;
+        padding: ($base-line-height / 2) 0;
+        text-align: left;
+    }
+}
+
+tbody {
+    td {
+        border-bottom: 1px solid $base-border-color;
+        padding: $spacer-s;
+    }
+
+    tr {
+        &:nth-child(even) {
+            background: $clr-0-lighten;
+        }
+    }
+}
